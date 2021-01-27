@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="546DA82A-E34E-11D4-00BE-099D8B38176E" name="Musterija">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:38:14 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MUS_ID" id="D0C6CAD9-E1BD-CCE5-2B20-F2841FBC5E61">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:38:22 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IME" id="A0C15F81-C0B2-7C2D-07DA-0878D650E1E7">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:38:53 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRZ" id="AFDC5432-2D60-0E7D-C5AF-B930869E075F">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:39:14 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BR_TEL" id="9E238069-0585-C394-70E2-1487BAB331C9">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:39:23 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="D28E9F72-824D-65A3-5130-0737EE3B46A1">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:39:47 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADR_ID" id="400B7328-352D-C734-DD9E-9F20DAF6BF3D">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:40:29 UTC</createdTime>
+<generatorID>C8A9D272-842A-F414-4AC6-DB2532D302C5</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FD7A2EEF-12CB-7358-B4AF-13680A30359A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ABDCE6D4-28ED-86CB-0B60-C619FE46C9FC" name="Musterija PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:40:08 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D0C6CAD9-E1BD-CCE5-2B20-F2841FBC5E61</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

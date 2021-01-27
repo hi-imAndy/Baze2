@@ -1,0 +1,25 @@
+Prikazati SER_ID, Naziv servisa, njegovu Web stranicu, broj usluga koje pruza kao i broj sefova koji su iz Novog Sada koji tu rade.
+
+CREATE VIEW ADRESE_IZ_NS (ADR_ID) AS
+SELECT ADR_ID 
+FROM Adresa, Grad 
+WHERE adresa.grad_grad_id = grad.grad_id
+AND grad_id = 1;
+
+CREATE VIEW SEFOVI_IZ_NS (broj_sefova, ser_id) AS
+SELECT count(DISTINCT z1.mbr), z1.objekat_servis_ser_id
+FROM zaposleni z1, zaposleni z2, adrese_iz_ns 
+WHERE z1.mbr = z2.zaposleni_mbr 
+AND z1.adresa_adr_id = adrese_iz_ns.adr_id
+GROUP BY  z1.objekat_servis_ser_id;
+
+CREATE VIEW SERVISI_SA_SEFOVIMA_IZ_NS (ser_id, broj_sefova) AS
+SELECT DISTINCT servis.ser_id, nvl(broj_sefova, 0)
+FROM servis LEFT OUTER JOIN sefovi_iz_ns
+ON servis.ser_id = sefovi_iz_ns.ser_id;
+
+SELECT servis.ser_id, servis.naz, servis.web_str, count(usl_id) broj_usluga, broj_sefova broj_sefova_iz_ns
+FROM servis, usluga, servisi_sa_sefovima_iz_ns
+WHERE servis.ser_id = usluga.servis_ser_id
+AND servis.ser_id = servisi_sa_sefovima_iz_ns.ser_id
+GROUP BY servis.ser_id, servis.naz, servis.web_str, broj_sefova;

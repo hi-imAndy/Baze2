@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="37887B20-F8F5-8053-564D-755FAA43A6E7" name="Musterijska_komponenta">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 11:08:03 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>D6D5C21E-13B6-2DBC-7970-25930771FE63</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="LAP_ID" id="37489D3B-CBF9-E1F5-1E66-8D0B4F4588B4">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 12:36:30 UTC</createdTime>
+<generatorID>98CD9ED1-B751-C6D8-1612-A6B7C4A0759C</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>49827139-B0C8-BD98-BD90-6A2AB6047057</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

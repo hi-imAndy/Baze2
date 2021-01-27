@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D914E704-DF13-A291-C133-2559013A5691" name="Dijagnoza">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>1D4DA5EE-F259-AD05-465E-3E782B8DD2C9</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Laptop_LAP_ID" id="18A041DF-96DA-9473-C5A8-341B71FC3F12">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>A0B5C399-B477-1584-C7B5-4BF474FB6AC8</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1BE43A5-A6D2-5DCC-2ECC-69B725B98B7E" referredColumn="ED3A293D-F5BB-E014-906D-8AD7EC450566"/>
+</associations>
+</Column>
+<Column name="OPIS_KVARA" id="917A1EBC-44EE-332B-F3F5-0D7F586E3C95">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>510DAAD0-4A03-9016-2141-B9145856F5AF</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRED_POP" id="4B631A30-01A3-4224-20FC-0378E434A003">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>96E3F649-8DA0-4D6B-D188-2CD2981FAF28</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Serviser_MBR" id="8D47B026-BE16-C708-EF4A-5A0ECF726027">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>8454F9F3-2682-2AFE-378E-8A9B15DF1D34</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71DA1FB9-2E57-8827-CCD1-5BDAED5C1EB0" referredColumn="21D3A3B4-CA76-BF76-F8B7-167BCA71B782"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5EE81046-97D9-B868-8067-8B7F82EB0418" name="Dijagnoza_PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>E92089DB-7A5F-26B6-FF24-51E24CAE7078</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18A041DF-96DA-9473-C5A8-341B71FC3F12"/>
+<colUsage columnID="8D47B026-BE16-C708-EF4A-5A0ECF726027"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC110160-D997-4267-33F0-BE279F387771" name="Dijagnoza_Laptop_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>FC467AB8-87FA-1990-3A05-32A72B64320F</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18A041DF-96DA-9473-C5A8-341B71FC3F12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8313BD10-6A5D-998A-60D1-633B31AEF03B" name="Dijagnoza_Serviser_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-21 12:50:22 UTC</createdTime>
+<generatorID>E824F896-5AE3-9080-B4E4-CCDEA10EC5CD</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D47B026-BE16-C708-EF4A-5A0ECF726027"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

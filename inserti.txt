@@ -1,0 +1,178 @@
+INSERT INTO Servis (SER_ID, NAZ, VL_IME, VL_PRZ, BR_OBJ, WEB_STR)
+VALUES (1, 'Bit servis', 'Pera', 'Peric', 3, 'www.bitservis.com');
+
+INSERT INTO Servis (SER_ID, NAZ, VL_IME, VL_PRZ, BR_OBJ, WEB_STR)
+VALUES (2, 'Iq laptop servis', 'Djura', 'Djuric', 2, 'www.iqlaptopservis.com');
+
+INSERT INTO Servis (SER_ID, NAZ, VL_IME, VL_PRZ, BR_OBJ, WEB_STR)
+VALUES (3, 'Bzc servis', 'Mika', 'Mikic', 2, 'www.bzcservis.com');
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (1, 'Instalacija OS', 'Instalacija operativnog sistema po zelji musterije(Windows 7, Windows 10, Linux)', 1500, 1);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (2, 'Ciscenje laptop uredjaja', 'Ciscenje laptop uredjaja od prasine i zamena paste na procesoru', 2000, 1);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (3, 'Dijagnostika kvara', 'Dijagnostika kvara uredjaja i predlog cene popravke', 500, 1);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (4, 'Instalacija OS', 'Instalacija operativnog sistema po zelji musterije(Windows 7, Windows 10, Linux)', 2000, 2);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (5, 'Ciscenje laptop uredjaja', 'Ciscenje laptop uredjaja od prasine i zamena paste na procesoru', 1500, 2);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (6, 'Dijagnostika kvara', 'Dijagnostika kvara uredjaja i predlog cene popravke', 1000, 2);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (7, 'Instalacija OS', 'Instalacija operativnog sistema po zelji musterije(Windows 7, Windows 10, Linux)', 2500, 3);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (8, 'Ciscenje laptop uredjaja', 'Ciscenje laptop uredjaja od prasine i zamena paste na procesoru', 2000, 3);
+
+INSERT INTO Usluga (USL_ID, NAZ_USL, OPIS_USL, CENA, SERVIS_SER_ID)
+VALUES (9, 'Dijagnostika kvara', 'Dijagnostika kvara uredjaja i predlog cene popravke', 1000, 3);
+
+INSERT INTO Objekat (OBJ_ID, TEL, BR_ZAP, SERVIS_SER_ID, ADRESA_ADR_ID)
+VALUES (1, '021/6043-213', 10, 1, NULL);
+
+INSERT INTO Objekat (OBJ_ID, TEL, BR_ZAP, SERVIS_SER_ID, ADRESA_ADR_ID)
+VALUES (2, '021/6043-603', 7, 1, NULL);
+
+INSERT INTO Objekat (OBJ_ID, TEL, BR_ZAP, SERVIS_SER_ID, ADRESA_ADR_ID)
+VALUES (3, '021/6043-553', 8, 1, NULL);
+
+INSERT INTO Objekat (OBJ_ID, TEL, BR_ZAP, SERVIS_SER_ID, ADRESA_ADR_ID)
+VALUES (4, '021/754-155', 12, 2, NULL);
+
+INSERT INTO Objekat (OBJ_ID, TEL, BR_ZAP, SERVIS_SER_ID, ADRESA_ADR_ID)
+VALUES (5, '021/754-205', 6, 2, NULL);
+
+INSERT INTO Objekat (OBJ_ID, TEL, BR_ZAP, SERVIS_SER_ID, ADRESA_ADR_ID)
+VALUES (6, '021/6043-434', 8, 3, NULL);
+
+INSERT INTO Objekat (OBJ_ID, TEL, BR_ZAP, SERVIS_SER_ID, ADRESA_ADR_ID)
+VALUES (7, '021/6043-565', 10, 3, NULL);
+
+INSERT INTO Period (PER_ID, DAN, OD, DO)
+VALUES (1, 'RADNI DAN', '7:00', '20:00');
+
+INSERT INTO Period (PER_ID, DAN, OD, DO)
+VALUES (2, 'SUBOTA', '9:00', '18:00');
+
+INSERT INTO Period (PER_ID, DAN, OD, DO)
+VALUES (3, 'NEDELJA', '10:00', '15:00');
+
+INSERT INTO Radno_vreme (objekat_obj_id, objekat_servis_ser_id, period_per_id)
+VALUES (1,1,1);
+
+INSERT INTO Radno_vreme (objekat_obj_id, objekat_servis_ser_id, period_per_id)
+VALUES (1,1,2);
+
+INSERT INTO Radno_vreme (objekat_obj_id, objekat_servis_ser_id, period_per_id)
+VALUES (1,1,3);
+
+INSERT INTO Drzava (DRZ_ID, NAZ_DRZ)
+VALUES ('SRB', 'Srbija');
+
+INSERT INTO Grad (GRAD_ID, POS_BROJ, NAZ_GRAD, DRZAVA_DRZ_ID) 
+VALUES (1, '21000', 'Novi Sad', 'SRB');
+
+INSERT INTO Grad (GRAD_ID, POS_BROJ, NAZ_GRAD, DRZAVA_DRZ_ID) 
+VALUES (2, '11000', 'Beograd', 'SRB');
+
+INSERT INTO Grad (GRAD_ID, POS_BROJ, NAZ_GRAD, DRZAVA_DRZ_ID) 
+VALUES (3, '21400', 'Backa Palanka', 'SRB');
+
+INSERT INTO Adresa (ADR_ID, ULI, BROJ, GRAD_GRAD_ID)
+VALUES (1, 'Partizanska', 10, 3);
+
+INSERT INTO Adresa (ADR_ID, ULI, BROJ, GRAD_GRAD_ID)
+VALUES (2, 'Dositeja Obradovica', 25, 1);
+
+INSERT INTO Adresa (ADR_ID, ULI, BROJ, GRAD_GRAD_ID)
+VALUES (3, 'Marsala Tita', 30, 2);
+
+ALTER TABLE Zaposleni
+MODIFY prz NVARCHAR2(50);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(1, 'Milan', 'Milanovic', '064-2122-457', 'milan@gmail.com', 55000, 'SERVISER', 1, 1, 1, NULL);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(2, 'Jovan', 'Jovanovic', '065-772-2543', 'jovan@gmail.com', 60000, 'SERVISER', 1, 1, 2, NULL);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(3, 'Petar', 'Petrovic', '063-452-5674', 'petar@gmail.com', 65000, 'SERVISER', 1, 1, 3, NULL);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(4, 'Milos', 'Milosevic', '061-452-5674', 'milos@gmail.com', 40000, 'SERVISER', 1, 1, 1, NULL);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(5, 'Janko', 'Jankovic', '064-2122-457', 'janko@gmail.com', 30000, 'USLUZITELJ', 2, 1, 1, 1);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(6, 'Marko', 'Markovic', '065-772-2543', 'marko@gmail.com', 34000, 'USLUZITELJ', 2, 1, 2, 2);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(7, 'Ivan', 'Ivanovic', '063-452-5674', 'ivan@gmail.com', 65000, 'SERVISER', 3, 1, 3, 1);
+
+INSERT INTO Zaposleni (MBR, IME, PRZ, BR_TEL, EMAIL, PLT, TIP, OBJEKAT_OBJ_ID, OBJEKAT_SERVIS_SER_ID, ADRESA_ADR_ID, ZAPOSLENI_MBR)
+VALUES(8, 'Pera', 'Peric', '061-452-5674', 'pera@gmail.com', 40000, 'SERVISER', 3, 1, 1, 2);
+
+UPDATE Objekat 
+SET ADRESA_ADR_ID = 1
+WHERE OBJ_ID = 1 AND SERVIS_SER_ID =1;
+
+UPDATE Objekat 
+SET ADRESA_ADR_ID = 2
+WHERE OBJ_ID = 2 AND SERVIS_SER_ID =1;
+
+UPDATE Objekat 
+SET ADRESA_ADR_ID = 3
+WHERE OBJ_ID = 3 AND SERVIS_SER_ID =1;
+
+INSERT INTO Adresa (ADR_ID, ULI, BROJ, GRAD_GRAD_ID)
+VALUES (4, 'Banatska', 20, 1);
+
+INSERT INTO Adresa (ADR_ID, ULI, BROJ, GRAD_GRAD_ID)
+VALUES (5, 'Marsala Tita', 50, 2);
+
+INSERT INTO Adresa (ADR_ID, ULI, BROJ, GRAD_GRAD_ID)
+VALUES (6, 'Partizanska', 12, 1);
+
+INSERT INTO Adresa (ADR_ID, ULI, BROJ, GRAD_GRAD_ID)
+VALUES (7, 'Glavna', 55, 3);
+
+UPDATE Objekat 
+SET ADRESA_ADR_ID = 4
+WHERE OBJ_ID = 4 AND SERVIS_SER_ID =2;
+
+UPDATE Objekat 
+SET ADRESA_ADR_ID = 5
+WHERE OBJ_ID = 5 AND SERVIS_SER_ID =2;
+
+UPDATE Objekat 
+SET ADRESA_ADR_ID = 6
+WHERE OBJ_ID = 6 AND SERVIS_SER_ID =3;
+
+UPDATE Objekat 
+SET ADRESA_ADR_ID = 7
+WHERE OBJ_ID = 7 AND SERVIS_SER_ID =3;
+
+UPDATE Zaposleni 
+SET ADRESA_ADR_ID = 4
+WHERE MBR = 4;
+
+UPDATE Zaposleni 
+SET ZAPOSLENI_MBR = 4
+WHERE MBR = 1;
+
+UPDATE Zaposleni 
+SET OBJEKAT_SERVIS_SER_ID = 2, OBJEKAT_OBJ_ID = 4
+WHERE MBR = 2;
+
+UPDATE Zaposleni 
+SET ADRESA_ADR_ID = 6
+WHERE MBR = 1;

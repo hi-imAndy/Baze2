@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D21EF059-FD11-BEB1-32FC-A81CF9E3B03D" name="Grad">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:06:30 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GRAD_ID" id="1D38FE5C-B42C-D185-626D-81298940161F">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:06:36 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POS_BROJ" id="2E867914-E591-18A1-267B-E19D13E76872">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:06:50 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAZ_GRAD" id="540314C9-06EE-ED48-9EF7-43DD6602ED26">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:07:42 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DRZ_ID" id="43E73919-87D0-5C0A-64B8-E130B13DC6FC">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:12:33 UTC</createdTime>
+<generatorID>03063AEF-6A9A-88FD-5D2B-A31418215CAA</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<referedAttribute>EBA39FB7-5B80-7C32-9E7F-B74F177E16CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="827F5887-6481-F215-B75B-8E6C9DE379AC" name="Grad PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:08:46 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1D38FE5C-B42C-D185-626D-81298940161F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

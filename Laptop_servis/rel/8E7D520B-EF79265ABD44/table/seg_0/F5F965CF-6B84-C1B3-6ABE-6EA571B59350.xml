@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5F965CF-6B84-C1B3-6ABE-6EA571B59350" name="Adresa">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>B5D12E85-F80A-9C87-CD55-248258F76A71</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADR_ID" id="8E51516E-B49F-2B93-DB80-78F97B54F28F">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>FD7A2EEF-12CB-7358-B4AF-13680A30359A</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ULI" id="FDB0E193-3E8A-979A-3849-474A1F642CCC">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>FF825EA8-6B3B-D392-D4C9-FF9B3AD3EDBE</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BROJ" id="A0117283-82B6-2617-4E33-E46357ED84CC">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>505C8A2F-5072-C993-7809-2EE72DC1488F</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Grad_GRAD_ID" id="6F01B956-37FC-D674-FE08-D4AA5D3991C9">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>6CB7C97F-72EA-054C-23E9-944554B77787</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4767AED-9A28-5A33-7AD4-132A81CA8A43" referredColumn="36C9B2A0-25FD-4243-D92A-E44CBBB65D2D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF1D882A-3FAF-AF37-8E67-97504540B68E" name="Adresa_PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>8F611AAB-C53D-1845-6CC5-714F7F801C63</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E51516E-B49F-2B93-DB80-78F97B54F28F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCAD8468-3F19-C5D5-8C8E-DE8F253274C8" name="Adresa_Grad_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>DD5972DC-5270-DEDB-77F4-97A0D78F99A9</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F01B956-37FC-D674-FE08-D4AA5D3991C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D4DA5EE-F259-AD05-465E-3E782B8DD2C9" name="Dijagnoza">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:19:12 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="LAP_ID" id="A0B5C399-B477-1584-C7B5-4BF474FB6AC8">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:20:56 UTC</createdTime>
+<generatorID>FC467AB8-87FA-1990-3A05-32A72B64320F</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<referedAttribute>49827139-B0C8-BD98-BD90-6A2AB6047057</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OPIS_KVARA" id="510DAAD0-4A03-9016-2141-B9145856F5AF">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:21:53 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRED_POP" id="96E3F649-8DA0-4D6B-D188-2CD2981FAF28">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:22:17 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MBR" id="8454F9F3-2682-2AFE-378E-8A9B15DF1D34">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:37:23 UTC</createdTime>
+<generatorID>E824F896-5AE3-9080-B4E4-CCDEA10EC5CD</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<referedAttribute>7BC9E358-7FC3-E582-24E4-ADFD7D5AB6DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E92089DB-7A5F-26B6-FF24-51E24CAE7078" name="Dijagnoza PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:21:37 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0B5C399-B477-1584-C7B5-4BF474FB6AC8</attributeRef>
+<attributeRef>8454F9F3-2682-2AFE-378E-8A9B15DF1D34</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

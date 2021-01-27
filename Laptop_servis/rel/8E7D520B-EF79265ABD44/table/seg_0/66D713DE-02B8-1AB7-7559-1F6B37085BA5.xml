@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66D713DE-02B8-1AB7-7559-1F6B37085BA5" name="Grad">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>D21EF059-FD11-BEB1-32FC-A81CF9E3B03D</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GRAD_ID" id="36C9B2A0-25FD-4243-D92A-E44CBBB65D2D">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>1D38FE5C-B42C-D185-626D-81298940161F</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POS_BROJ" id="1C4429CC-5B7E-6EE9-6942-EBD337EB40D0">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>2E867914-E591-18A1-267B-E19D13E76872</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZ_GRAD" id="6A964C76-117A-FCAA-20F3-91243F2C125D">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>540314C9-06EE-ED48-9EF7-43DD6602ED26</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Drzava_DRZ_ID" id="61302238-4559-A00E-B12F-85BC855391F1">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>43E73919-87D0-5C0A-64B8-E130B13DC6FC</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AFC2475-DB5A-721A-9536-477E0DAC3DD2" referredColumn="E372F7DA-5663-D77A-3D3A-9C2D86D19455"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3776339-036F-64A1-6861-6EDA212ED708" name="Grad_PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>827F5887-6481-F215-B75B-8E6C9DE379AC</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36C9B2A0-25FD-4243-D92A-E44CBBB65D2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05A832DE-4870-D117-104B-8AF2D9164D70" name="Grad_Drzava_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>03063AEF-6A9A-88FD-5D2B-A31418215CAA</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61302238-4559-A00E-B12F-85BC855391F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

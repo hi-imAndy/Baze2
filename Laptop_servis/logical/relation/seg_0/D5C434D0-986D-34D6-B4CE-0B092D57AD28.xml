@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Zivi" directorySegmentName="seg_0" id="D5C434D0-986D-34D6-B4CE-0B092D57AD28">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:43:05 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="0FF5C3C2-8644-1B59-BE5D-1B79E66C4B4D" value="true"/>
+</engineerTo>
+<sourcePk>6733351C-3FAE-E637-06E7-7A984E91E487</sourcePk>
+<targetPk>8F611AAB-C53D-1845-6CC5-714F7F801C63</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>ED6690CA-0FFF-6D2E-47A2-82248CFBABB9</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B5D12E85-F80A-9C87-CD55-248258F76A71</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

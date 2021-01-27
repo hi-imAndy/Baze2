@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Radno_vreme" directorySegmentName="seg_0" id="2FAF742C-CCAB-03C7-1684-581F150E77C4">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 11:39:58 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="0FF5C3C2-8644-1B59-BE5D-1B79E66C4B4D" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>84416B79-71D9-7A28-1790-20BACDD3F654</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8C7F532F-F0CE-31CE-BE11-64C70D5770AC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

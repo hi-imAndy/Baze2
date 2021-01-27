@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="595A49B0-7220-B280-A145-76C453C106E4" containerWithKeyObject="1E13A497-A389-5484-DF12-C60142F1309F" localFKIndex="7E5AFDCB-6957-FE87-B3F9-FB1BCA2FEB88" name="Popravka_Dijagnoza_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>235D6DF2-367A-F96B-A656-B664F15918C4</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<referredTableLongName>Dijagnoza</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D914E704-DF13-A291-C133-2559013A5691</referredTableID>
+<keyObject>5EE81046-97D9-B868-8067-8B7F82EB0418</keyObject>
+<referredKeyID>5EE81046-97D9-B868-8067-8B7F82EB0418</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Laptop_LAP_ID,Serviser_MBR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

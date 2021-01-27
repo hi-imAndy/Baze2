@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Se nalazi" directorySegmentName="seg_0" id="DD5972DC-5270-DEDB-77F4-97A0D78F99A9">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:08:58 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="0FF5C3C2-8644-1B59-BE5D-1B79E66C4B4D" value="true"/>
+</engineerTo>
+<sourcePk>8F611AAB-C53D-1845-6CC5-714F7F801C63</sourcePk>
+<targetPk>827F5887-6481-F215-B75B-8E6C9DE379AC</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>B5D12E85-F80A-9C87-CD55-248258F76A71</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D21EF059-FD11-BEB1-32FC-A81CF9E3B03D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

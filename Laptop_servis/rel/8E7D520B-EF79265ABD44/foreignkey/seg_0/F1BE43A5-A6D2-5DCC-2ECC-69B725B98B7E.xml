@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1BE43A5-A6D2-5DCC-2ECC-69B725B98B7E" containerWithKeyObject="D914E704-DF13-A291-C133-2559013A5691" localFKIndex="BC110160-D997-4267-33F0-BE279F387771" name="Dijagnoza_Laptop_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>FC467AB8-87FA-1990-3A05-32A72B64320F</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<referredTableLongName>Laptop</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>394C1966-4154-4626-B972-4977ACE90FFB</referredTableID>
+<keyObject>EF83E958-141E-0CBF-A3E7-B2AC6074BDD2</keyObject>
+<referredKeyID>EF83E958-141E-0CBF-A3E7-B2AC6074BDD2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>LAP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

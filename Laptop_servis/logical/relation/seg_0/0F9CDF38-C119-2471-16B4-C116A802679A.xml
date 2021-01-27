@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Objekat_adresa" directorySegmentName="seg_0" id="0F9CDF38-C119-2471-16B4-C116A802679A">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 11:47:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<sourcePk>4CCF0443-2538-A60F-7280-5F70FEC0800B</sourcePk>
+<targetPk>8F611AAB-C53D-1845-6CC5-714F7F801C63</targetPk>
+<dominantRole>B5D12E85-F80A-9C87-CD55-248258F76A71</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>84416B79-71D9-7A28-1790-20BACDD3F654</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B5D12E85-F80A-9C87-CD55-248258F76A71</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

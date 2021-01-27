@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="mydomains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Marka_laptop" id="598DA763-51A0-0598-3325-EC3EFECBD066">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 17:26:02 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>598DA763-51A0-0598-3325-EC3EFECBD066</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+<listOfValues>
+<valueDef value="ASUS" description=""/>
+<valueDef value="DELL" description=""/>
+<valueDef value="HP" description=""/>
+<valueDef value="LENOVO" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Marka_komponente" id="6DB4477E-D8DA-B6F5-3FA7-5F513D73D9DF">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 17:28:39 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>6DB4477E-D8DA-B6F5-3FA7-5F513D73D9DF</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+<listOfValues>
+<valueDef value="AMD" description=""/>
+<valueDef value="DELL" description=""/>
+<valueDef value="INTEL" description=""/>
+<valueDef value="NVIDIA" description=""/>
+<valueDef value="RTX" description=""/>
+<valueDef value="SAMSUNG" description=""/>
+<valueDef value="TOSHIBA" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Dan" id="94C4D246-05CF-F641-3743-F741B2350BEE">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 17:22:40 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>94C4D246-05CF-F641-3743-F741B2350BEE</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+<listOfValues>
+<valueDef value="NEDELJA" description=""/>
+<valueDef value="RADNI_DAN" description=""/>
+<valueDef value="SUBOTA" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Status_laptop" id="9D6C8B62-0B05-F9A0-51F6-92CDDA45E99B">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 17:23:23 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>9D6C8B62-0B05-F9A0-51F6-92CDDA45E99B</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+<listOfValues>
+<valueDef value="DIJAGNOSTIKOVAN" description=""/>
+<valueDef value="POKVAREN" description=""/>
+<valueDef value="POPRAVLJEN" description=""/>
+<valueDef value="VRACEN_VLASNIKU" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Tip_komponente" id="A01093AA-DDC3-7070-FCF8-B1E84D719C73">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 17:30:21 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>A01093AA-DDC3-7070-FCF8-B1E84D719C73</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+<listOfValues>
+<valueDef value="MUSTERIJSKA" description=""/>
+<valueDef value="SERVISNA" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Tip_zaposlenog" id="D772FF9A-C4E5-65E6-D7F2-641A635F2AD0">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 17:26:37 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>D772FF9A-C4E5-65E6-D7F2-641A635F2AD0</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+<listOfValues>
+<valueDef value="SERVISER" description=""/>
+<valueDef value="USLUZITELJ" description=""/>
+</listOfValues>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Unknown" id="DOM3000004">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-07 17:39:58 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>DOM3000004</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Vrsta_komponente" id="F3F68637-BEFA-6AFF-F12A-AD32142C5256">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 17:27:51 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<importedID>F3F68637-BEFA-6AFF-F12A-AD32142C5256</importedID>
+<avTSortOrder>0</avTSortOrder>
+<fileName>mydomains</fileName>
+<logicalDatatype>LOGDT017</logicalDatatype>
+<listOfValues>
+<valueDef value="GRAFICKA_KARTICA" description=""/>
+<valueDef value="HARD_DISK" description=""/>
+<valueDef value="PROCESOR" description=""/>
+<valueDef value="RAM_MEMORIJA" description=""/>
+<valueDef value="SSD" description=""/>
+</listOfValues>
+</Domain>
+</domains>
+</DomainFile>

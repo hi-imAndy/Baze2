@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Popravka" directorySegmentName="seg_0" id="235D6DF2-367A-F96B-A656-B664F15918C4">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:40:40 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>1D4DA5EE-F259-AD05-465E-3E782B8DD2C9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3463236B-7DFC-A161-0280-C4154778A8C4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="DAT_POP" id="73CF112F-F3FA-F600-8DD0-FD28D6AF1849">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:52:45 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>AD06777E-913C-B3CC-20F7-DA3F5EF34BD4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="VR_POP" id="E0566756-26EF-BC9F-A8B1-6F11D1479A06">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:52:56 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<domain>901FF200-BC60-F1F2-0DB7-C1894273117A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="CENA" id="B3DAC5E7-0407-4416-A677-F4787A4EC5E9">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:53:11 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>F60934E9-6CD2-0B2D-5FCF-DBA2B96B8742</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

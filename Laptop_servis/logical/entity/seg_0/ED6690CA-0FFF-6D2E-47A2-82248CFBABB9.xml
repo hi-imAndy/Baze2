@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED6690CA-0FFF-6D2E-47A2-82248CFBABB9" name="Zaposleni">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:29:35 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorAttributeID>040332AC-532D-347F-B56E-717674F51EC1</discriminatorAttributeID>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MBR" id="7BC9E358-7FC3-E582-24E4-ADFD7D5AB6DE">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:29:50 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IME" id="BE8813C0-1BA7-08E6-60C0-478240E7B32C">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:30:29 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRZ" id="51E6F1B1-0513-DB1D-D271-4B05B39C489F">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:30:45 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BR_TEL" id="29000ECB-DDC8-F21F-EFCA-892E361BC6D0">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:30:56 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="9F70A92F-E35C-075F-2B54-9F9EB5C7525F">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:31:08 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLT" id="ECAD2A12-17DF-E05B-DADC-C61FB62A0AD6">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:31:20 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIP" id="040332AC-532D-347F-B56E-717674F51EC1">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:31:33 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>D772FF9A-C4E5-65E6-D7F2-641A635F2AD0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OBJ_ID" id="D30EDD98-5B29-BD79-BDC7-F27FAACC4149">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:34:30 UTC</createdTime>
+<generatorID>FAC5D2B0-DA40-A8E5-1867-A2D5C82B8AB4</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<referedAttribute>6F5FAAD0-5F45-7592-515B-C776BF8CDA91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SER_ID" id="6A0A5D0B-8E2B-1997-3E7D-93967BBEBFC5">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:34:30 UTC</createdTime>
+<generatorID>FAC5D2B0-DA40-A8E5-1867-A2D5C82B8AB4</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<referedAttribute>70E356C7-9EBB-CBB4-2142-141A9EF38EC3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADR_ID" id="19831834-15C7-EAEC-3E7F-6ABC9AD305DB">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:43:26 UTC</createdTime>
+<generatorID>D5C434D0-986D-34D6-B4CE-0B092D57AD28</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<referedAttribute>FD7A2EEF-12CB-7358-B4AF-13680A30359A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEF" id="B5996D25-178C-9CF3-46AC-561B4CB6B741">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:47:55 UTC</createdTime>
+<generatorID>0B49F923-E17B-E997-2F83-CC69ED8EC8D4</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7BC9E358-7FC3-E582-24E4-ADFD7D5AB6DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6733351C-3FAE-E637-06E7-7A984E91E487" name="Zaposleni PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-08 15:30:54 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8E7D520B-141E-C611-299A-EF79265ABD44" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7BC9E358-7FC3-E582-24E4-ADFD7D5AB6DE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

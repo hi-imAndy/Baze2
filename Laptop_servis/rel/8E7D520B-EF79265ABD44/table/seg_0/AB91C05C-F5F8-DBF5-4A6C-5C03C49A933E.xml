@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB91C05C-F5F8-DBF5-4A6C-5C03C49A933E" name="Musterijska_komponenta">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>37887B20-F8F5-8053-564D-755FAA43A6E7</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KOM_ID" id="62C7A364-8510-2577-6991-5AC57C1F5607">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>2F48CF45-81E2-F3CB-D991-32C5162186C7</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="866DEA24-662F-AFED-E29E-B4AFEEC0DEE2" referredColumn="3222FAF6-CE22-AAFB-FDC5-53647CC4C2BF"/>
+</associations>
+</Column>
+<Column name="Laptop_LAP_ID" id="0A6DA153-4DE9-70A8-4BFD-46C9813655B6">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>37489D3B-CBF9-E1F5-1E66-8D0B4F4588B4</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF24AB02-ED11-F14A-16DC-4649637F0E7E" referredColumn="ED3A293D-F5BB-E014-906D-8AD7EC450566"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF16F3C7-AFCC-AA47-E405-4E504F0BDC18" name="Musterijska_komponenta_PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>9A29F191-AE4B-C382-1E21-C298F4926AD8</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62C7A364-8510-2577-6991-5AC57C1F5607"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCD6FD77-8155-E876-4963-17088EAD152D" name="Musterijska_komponenta_Komponenta_uredjaja_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>43F9614D-5849-9106-A839-854A4EDB04A8</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62C7A364-8510-2577-6991-5AC57C1F5607"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5ACC940C-D8ED-6E40-D3CE-9FB954A54AB2" name="Musterijska_komponenta_Laptop_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>98CD9ED1-B751-C6D8-1612-A6B7C4A0759C</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A6DA153-4DE9-70A8-4BFD-46C9813655B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

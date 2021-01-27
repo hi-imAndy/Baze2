@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4B01187-8F42-0A28-7D4A-5DB65DED906C" containerWithKeyObject="0EB22773-4275-B9C4-F126-D859AF17F8BD" localFKIndex="60C9D580-9667-6CF8-C9BD-5898415B3F5C" name="Objekat_Oprema_Objekat_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>E4C38842-5ED7-97BC-A691-AB8622B6CF9E</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<referredTableLongName>Objekat</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F5273DA1-9F40-6F94-C3A6-A5E23F812CAD</referredTableID>
+<keyObject>85806B47-6804-D45A-5DC0-18A69DBCDA82</keyObject>
+<referredKeyID>85806B47-6804-D45A-5DC0-18A69DBCDA82</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>OBJ_ID,Servis_SER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

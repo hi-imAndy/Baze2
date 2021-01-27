@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EB22773-4275-B9C4-F126-D859AF17F8BD" name="Objekat_Oprema">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Objekat_OBJ_ID" id="917BB100-06EF-E2C2-372C-9E1B338AEB67">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4B01187-8F42-0A28-7D4A-5DB65DED906C" referredColumn="69BDF58A-A8D0-9582-4258-5FB918085341"/>
+</associations>
+</Column>
+<Column name="Objekat_Servis_SER_ID" id="AD151969-60BE-5311-E268-0B1964C8E27F">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4B01187-8F42-0A28-7D4A-5DB65DED906C" referredColumn="34CC6883-1ECF-BDF5-6703-AD48C78435EB"/>
+</associations>
+</Column>
+<Column name="Oprema_OPR_ID" id="7A0BE5EA-C4A9-B6E1-5E79-2A12166E7827">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACB1F226-DEA4-2DE0-4861-6AAF6FE25A7D" referredColumn="E1B1232B-25C5-22A1-F134-38064C03413D"/>
+</associations>
+</Column>
+<Column name="KOLICINA" id="11F981D5-8914-4F2C-20B5-2574E445CC86">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>3ED24BBF-59CF-1DBE-802A-B50D319E5E83</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4FE1860D-FFF5-0750-2AB1-D76A2A415BC0" name="Objekat_Oprema_PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="917BB100-06EF-E2C2-372C-9E1B338AEB67"/>
+<colUsage columnID="AD151969-60BE-5311-E268-0B1964C8E27F"/>
+<colUsage columnID="7A0BE5EA-C4A9-B6E1-5E79-2A12166E7827"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60C9D580-9667-6CF8-C9BD-5898415B3F5C" name="Objekat_Oprema_Objekat_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>E4C38842-5ED7-97BC-A691-AB8622B6CF9E</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="917BB100-06EF-E2C2-372C-9E1B338AEB67"/>
+<colUsage columnID="AD151969-60BE-5311-E268-0B1964C8E27F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1060C73-A412-2463-CADD-376BEDCEE847" name="Objekat_Oprema_Oprema_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>E4C38842-5ED7-97BC-A691-AB8622B6CF9E</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A0BE5EA-C4A9-B6E1-5E79-2A12166E7827"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

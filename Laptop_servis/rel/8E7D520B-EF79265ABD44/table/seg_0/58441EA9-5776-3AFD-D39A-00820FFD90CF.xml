@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58441EA9-5776-3AFD-D39A-00820FFD90CF" name="Radno_vreme">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Objekat_OBJ_ID" id="FD0AEEF6-43B6-A79D-DA71-9E6DB1E0C7B5">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE0D2E4B-195C-FE74-4AF1-0C901C944D85" referredColumn="69BDF58A-A8D0-9582-4258-5FB918085341"/>
+</associations>
+</Column>
+<Column name="Objekat_Servis_SER_ID" id="B1D2C550-03B1-ED68-918B-2AE958F7E40D">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE0D2E4B-195C-FE74-4AF1-0C901C944D85" referredColumn="34CC6883-1ECF-BDF5-6703-AD48C78435EB"/>
+</associations>
+</Column>
+<Column name="Period_PER_ID" id="1A025FD3-9E2D-5C48-8036-578FD02DC849">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01F5D661-64BD-12BE-8963-E3E414F57F06" referredColumn="402184D3-BDCE-AFED-7B8D-47AA9EE06B05"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1B1CB16-26E8-7476-F399-2ADE8A3350DA" name="Radno_vreme_PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD0AEEF6-43B6-A79D-DA71-9E6DB1E0C7B5"/>
+<colUsage columnID="B1D2C550-03B1-ED68-918B-2AE958F7E40D"/>
+<colUsage columnID="1A025FD3-9E2D-5C48-8036-578FD02DC849"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5BBEB1A-5988-CD1A-092D-A446A2F85717" name="Radno_vreme_Objekat_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>2FAF742C-CCAB-03C7-1684-581F150E77C4</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD0AEEF6-43B6-A79D-DA71-9E6DB1E0C7B5"/>
+<colUsage columnID="B1D2C550-03B1-ED68-918B-2AE958F7E40D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A4819E7-5413-0762-F980-5EF61C6DEA99" name="Radno_vreme_Period_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>2FAF742C-CCAB-03C7-1684-581F150E77C4</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A025FD3-9E2D-5C48-8036-578FD02DC849"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

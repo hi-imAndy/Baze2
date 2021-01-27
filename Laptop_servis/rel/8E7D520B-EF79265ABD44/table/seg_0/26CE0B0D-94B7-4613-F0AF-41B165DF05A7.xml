@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26CE0B0D-94B7-4613-F0AF-41B165DF05A7" name="Servisna_komponenta">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>982C4B19-1C06-1392-005F-1A41A3E420E0</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KOM_ID" id="279276A1-2781-CF6E-29C6-36331F21E4D6">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>2F48CF45-81E2-F3CB-D991-32C5162186C7</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC658CF8-2118-B674-1D96-ED7629AAC12F" referredColumn="3222FAF6-CE22-AAFB-FDC5-53647CC4C2BF"/>
+</associations>
+</Column>
+<Column name="Cena" id="B3701E04-9D2B-BE50-277B-9F210F0A28CB">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>D7531857-415A-1B95-80CF-8F245C7E9D52</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E0DED57-36F9-111B-3973-DFA59EBA3732" name="Servisna_komponenta_PK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>9A29F191-AE4B-C382-1E21-C298F4926AD8</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="279276A1-2781-CF6E-29C6-36331F21E4D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EF608DE-DDEA-81EB-EAF4-060F79A35B7B" name="Servisna_komponenta_Komponenta_uredjaja_FK">
+<createdBy>Andrej</createdBy>
+<createdTime>2021-01-11 22:48:18 UTC</createdTime>
+<generatorID>1A491092-7627-A68E-55B3-E5D7F226A628</generatorID>
+<ownerDesignName>Servis_racunara</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="279276A1-2781-CF6E-29C6-36331F21E4D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

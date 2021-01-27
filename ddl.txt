@@ -1,0 +1,351 @@
+CREATE TABLE adresa (
+    adr_id        INTEGER NOT NULL,
+    uli           NVARCHAR2(50),
+    broj          INTEGER,
+    grad_grad_id  NVARCHAR2(10) NOT NULL
+);
+
+ALTER TABLE adresa ADD CONSTRAINT adresa_pk PRIMARY KEY ( adr_id );
+
+CREATE TABLE dijagnoza (
+    laptop_lap_id  INTEGER NOT NULL,
+    opis_kvara     NVARCHAR2(100),
+    pred_pop       NVARCHAR2(100),
+    serviser_mbr   INTEGER NOT NULL
+);
+
+ALTER TABLE dijagnoza ADD CONSTRAINT dijagnoza_pk PRIMARY KEY ( laptop_lap_id,
+                                                                serviser_mbr );
+
+CREATE TABLE drzava (
+    drz_id   NVARCHAR2(10) NOT NULL,
+    naz_drz  NVARCHAR2(50)
+);
+
+ALTER TABLE drzava ADD CONSTRAINT drzava_pk PRIMARY KEY ( drz_id );
+
+CREATE TABLE formular (
+    for_id            INTEGER NOT NULL,
+    dat_dol           DATE,
+    vr_dol            DATE,
+    opis_kvara        NVARCHAR2(100),
+    musterija_mus_id  INTEGER,
+    usluzitelj_mbr    INTEGER NOT NULL
+);
+
+ALTER TABLE formular ADD CONSTRAINT formular_pk PRIMARY KEY ( for_id );
+
+CREATE TABLE grad (
+    grad_id        NVARCHAR2(10) NOT NULL,
+    pos_broj       NVARCHAR2(20),
+    naz_grad       NVARCHAR2(50),
+    drzava_drz_id  NVARCHAR2(10) NOT NULL
+);
+
+ALTER TABLE grad ADD CONSTRAINT grad_pk PRIMARY KEY ( grad_id );
+
+CREATE TABLE komponenta_uredjaja (
+    kom_id    INTEGER NOT NULL,
+    vrs_kom   NVARCHAR2(30),
+    mar_kom   NVARCHAR2(30),
+    opis_kom  NVARCHAR2(200),
+    mod_kom   NVARCHAR2(100),
+    tip_komp  NVARCHAR2(30) NOT NULL             
+    );
+
+ALTER TABLE komponenta_uredjaja ADD CONSTRAINT komponenta_uredjaja_pk PRIMARY KEY ( kom_id );
+ALTER TABLE komponenta_uredjaja ADD CHECK (vrs_kom='GRAFICKA KARTICA' OR vrs_kom='HARD DISK' OR vrs_kom='PROCESOR' OR vrs_kom='RAM MEMORIJA' OR vrs_kom='SSD');
+ALTER TABLE komponenta_uredjaja ADD CHECK (mar_kom='AMD' OR mar_kom='DELL' OR mar_kom='INTEL' OR mar_kom='NVIDIA' OR mar_kom='SAMSUNG' OR mar_kom='TOSHIBA');
+ALTER TABLE komponenta_uredjaja ADD CHECK (tip_komp='MUSTERIJSKA' OR tip_komp='SERVISNA');
+
+CREATE TABLE laptop (
+    lap_id           INTEGER NOT NULL,
+    mar_lap          NVARCHAR2(50),
+    mod_lap          NVARCHAR2(100),
+    dat_pro          DATE,
+    stat             NVARCHAR2(50),
+    formular_for_id  INTEGER
+);
+
+ALTER TABLE laptop ADD CONSTRAINT laptop_pk PRIMARY KEY ( lap_id );
+
+ALTER TABLE laptop ADD CHECK (mar_lap='ASUS' OR mar_lap='DELL' OR mar_lap='HP' OR mar_lap='LENOVO');
+ALTER TABLE laptop ADD CHECK (stat='DIJAGNOSTIKOVAN' OR stat='POKVAREN' OR stat='POPRAVLJEN' OR stat='VRACEN VLASNIKU');
+
+CREATE TABLE musterija (
+    mus_id         INTEGER NOT NULL,
+    ime            NVARCHAR2(30),
+    prz            NVARCHAR2(30),
+    br_tel         NVARCHAR2(30),
+    email          NVARCHAR2(30),
+    adresa_adr_id  INTEGER
+);
+
+ALTER TABLE musterija ADD CONSTRAINT musterija_pk PRIMARY KEY ( mus_id );
+
+CREATE TABLE musterijska_komponenta (
+    kom_id         INTEGER NOT NULL,
+    laptop_lap_id  INTEGER
+);
+
+ALTER TABLE musterijska_komponenta ADD CONSTRAINT musterijska_komponenta_pk PRIMARY KEY ( kom_id );
+
+CREATE TABLE objekat (
+    obj_id         INTEGER NOT NULL,
+    tel            NVARCHAR2(30),
+    br_zap         INTEGER,
+    servis_ser_id  INTEGER NOT NULL,
+    adresa_adr_id  INTEGER
+);
+
+CREATE UNIQUE INDEX objekat__idx ON
+    objekat (
+        adresa_adr_id
+    ASC );
+
+ALTER TABLE objekat ADD CONSTRAINT objekat_pk PRIMARY KEY ( obj_id,
+                                                            servis_ser_id );
+
+CREATE TABLE objekat_komponenta (
+    servisna_komponenta_kom_id  INTEGER NOT NULL,
+    objekat_obj_id              INTEGER NOT NULL,
+    objekat_servis_ser_id       INTEGER NOT NULL,
+    kolicina                    INTEGER
+);
+
+ALTER TABLE objekat_komponenta
+    ADD CONSTRAINT objekat_komponenta_pk PRIMARY KEY ( servisna_komponenta_kom_id,
+                                                       objekat_obj_id,
+                                                       objekat_servis_ser_id );
+
+CREATE TABLE objekat_oprema (
+    objekat_obj_id         INTEGER NOT NULL,
+    objekat_servis_ser_id  INTEGER NOT NULL,
+    oprema_opr_id          INTEGER NOT NULL,
+    kolicina               INTEGER
+);
+
+ALTER TABLE objekat_oprema
+    ADD CONSTRAINT objekat_oprema_pk PRIMARY KEY ( objekat_obj_id,
+                                                   objekat_servis_ser_id,
+                                                   oprema_opr_id );
+
+CREATE TABLE oprema (
+    opr_id    INTEGER NOT NULL,
+    naz_opr   NVARCHAR2(30),
+    opis_opr  NVARCHAR2(100),
+    vrs_opr   NVARCHAR2(1)
+);
+
+ALTER TABLE oprema ADD CONSTRAINT oprema_pk PRIMARY KEY ( opr_id );
+
+CREATE TABLE period (
+    per_id  INTEGER NOT NULL,
+    dan     NVARCHAR2(30),
+    od      VARCHAR2(10),
+    do      VARCHAR2(10)
+);
+
+ALTER TABLE period ADD CONSTRAINT period_pk PRIMARY KEY ( per_id );
+ALTER TABLE period ADD CHECK (dan='RADNI DAN' OR dan='SUBOTA' OR dan='NEDELJA');
+
+CREATE TABLE popravka (
+    dijagnoza_laptop_lap_id  INTEGER NOT NULL,
+    dijagnoza_serviser_mbr   INTEGER NOT NULL,
+    serviser_mbr             INTEGER NOT NULL,
+    dat_pop                  DATE,
+    vr_pop                   DATE,
+    cena                     NUMBER
+);
+
+ALTER TABLE popravka
+    ADD CONSTRAINT popravka_pk PRIMARY KEY ( dijagnoza_laptop_lap_id,
+                                             dijagnoza_serviser_mbr,
+                                             serviser_mbr );
+
+CREATE TABLE radno_vreme (
+    objekat_obj_id         INTEGER NOT NULL,
+    objekat_servis_ser_id  INTEGER NOT NULL,
+    period_per_id          INTEGER NOT NULL
+);
+
+ALTER TABLE radno_vreme
+    ADD CONSTRAINT radno_vreme_pk PRIMARY KEY ( objekat_obj_id,
+                                                objekat_servis_ser_id,
+                                                period_per_id );
+
+CREATE TABLE servis (
+    ser_id   INTEGER NOT NULL,
+    naz      NVARCHAR2(30),
+    vl_ime   NVARCHAR2(50),
+    vl_prz   NVARCHAR2(50),
+    br_obj   INTEGER,
+    web_str  NVARCHAR2(30)
+);
+
+ALTER TABLE servis ADD CONSTRAINT servis_pk PRIMARY KEY ( ser_id );
+
+CREATE TABLE serviser (
+    mbr INTEGER NOT NULL
+);
+
+ALTER TABLE serviser ADD CONSTRAINT serviser_pk PRIMARY KEY ( mbr );
+
+CREATE TABLE servisna_komponenta (
+    kom_id  INTEGER NOT NULL,
+    cena    NUMBER
+);
+
+ALTER TABLE servisna_komponenta ADD CONSTRAINT servisna_komponenta_pk PRIMARY KEY ( kom_id );
+
+CREATE TABLE usluga (
+    usl_id         INTEGER NOT NULL,
+    naz_usl        NVARCHAR2(30),
+    opis_usl       NVARCHAR2(500),
+    cena           NUMBER,
+    servis_ser_id  INTEGER
+);
+
+ALTER TABLE usluga ADD CONSTRAINT usluga_pk PRIMARY KEY ( usl_id );
+
+CREATE TABLE usluzitelj (
+    mbr INTEGER NOT NULL
+);
+
+ALTER TABLE usluzitelj ADD CONSTRAINT usluzitelj_pk PRIMARY KEY ( mbr );
+
+CREATE TABLE zaposleni (
+    mbr                    INTEGER NOT NULL,
+    ime                    NVARCHAR2(50),
+    prz                    NVARCHAR2(1),
+    br_tel                 NVARCHAR2(30),
+    email                  NVARCHAR2(30),
+    plt                    NUMBER,
+    tip                    NVARCHAR2(30) NOT NULL,
+    objekat_obj_id         INTEGER,
+    objekat_servis_ser_id  INTEGER,
+    adresa_adr_id          INTEGER NOT NULL,
+    zaposleni_mbr          INTEGER
+);
+
+ALTER TABLE zaposleni ADD CHECK (tip='SERVISER' OR tip='USLUZITELJ');
+
+ALTER TABLE zaposleni ADD CONSTRAINT zaposleni_pk PRIMARY KEY ( mbr );
+
+ALTER TABLE adresa
+    ADD CONSTRAINT adresa_grad_fk FOREIGN KEY ( grad_grad_id )
+        REFERENCES grad ( grad_id );
+
+ALTER TABLE dijagnoza
+    ADD CONSTRAINT dijagnoza_laptop_fk FOREIGN KEY ( laptop_lap_id )
+        REFERENCES laptop ( lap_id );
+
+ALTER TABLE dijagnoza
+    ADD CONSTRAINT dijagnoza_serviser_fk FOREIGN KEY ( serviser_mbr )
+        REFERENCES serviser ( mbr );
+
+ALTER TABLE formular
+    ADD CONSTRAINT formular_musterija_fk FOREIGN KEY ( musterija_mus_id )
+        REFERENCES musterija ( mus_id );
+
+ALTER TABLE formular
+    ADD CONSTRAINT formular_usluzitelj_fk FOREIGN KEY ( usluzitelj_mbr )
+        REFERENCES usluzitelj ( mbr );
+
+ALTER TABLE grad
+    ADD CONSTRAINT grad_drzava_fk FOREIGN KEY ( drzava_drz_id )
+        REFERENCES drzava ( drz_id );
+
+ALTER TABLE laptop
+    ADD CONSTRAINT laptop_formular_fk FOREIGN KEY ( formular_for_id )
+        REFERENCES formular ( for_id );
+
+ALTER TABLE musterija
+    ADD CONSTRAINT musterija_adresa_fk FOREIGN KEY ( adresa_adr_id )
+        REFERENCES adresa ( adr_id );
+
+ALTER TABLE musterijska_komponenta
+    ADD CONSTRAINT musterijska_komponenta_fk FOREIGN KEY ( kom_id )
+        REFERENCES komponenta_uredjaja ( kom_id );
+
+ALTER TABLE musterijska_komponenta
+    ADD CONSTRAINT musterijska_laptop_fk FOREIGN KEY ( laptop_lap_id )
+        REFERENCES laptop ( lap_id );
+
+ALTER TABLE objekat
+    ADD CONSTRAINT objekat_adresa_fk FOREIGN KEY ( adresa_adr_id )
+        REFERENCES adresa ( adr_id );
+
+ALTER TABLE objekat_komponenta
+    ADD CONSTRAINT objekat_komponenta_objekat_fk FOREIGN KEY ( objekat_obj_id,
+                                                               objekat_servis_ser_id )
+        REFERENCES objekat ( obj_id,
+                             servis_ser_id );
+
+ALTER TABLE objekat_komponenta
+    ADD CONSTRAINT objekat_komponenta_fk FOREIGN KEY ( servisna_komponenta_kom_id )
+        REFERENCES servisna_komponenta ( kom_id );
+
+ALTER TABLE objekat_oprema
+    ADD CONSTRAINT objekat_oprema_objekat_fk FOREIGN KEY ( objekat_obj_id,
+                                                           objekat_servis_ser_id )
+        REFERENCES objekat ( obj_id,
+                             servis_ser_id );
+
+ALTER TABLE objekat_oprema
+    ADD CONSTRAINT objekat_oprema_oprema_fk FOREIGN KEY ( oprema_opr_id )
+        REFERENCES oprema ( opr_id );
+
+ALTER TABLE objekat
+    ADD CONSTRAINT objekat_servis_fk FOREIGN KEY ( servis_ser_id )
+        REFERENCES servis ( ser_id );
+
+ALTER TABLE popravka
+    ADD CONSTRAINT popravka_dijagnoza_fk FOREIGN KEY ( dijagnoza_laptop_lap_id,
+                                                       dijagnoza_serviser_mbr )
+        REFERENCES dijagnoza ( laptop_lap_id,
+                               serviser_mbr );
+
+ALTER TABLE popravka
+    ADD CONSTRAINT popravka_serviser_fk FOREIGN KEY ( serviser_mbr )
+        REFERENCES serviser ( mbr );
+
+ALTER TABLE radno_vreme
+    ADD CONSTRAINT radno_vreme_objekat_fk FOREIGN KEY ( objekat_obj_id,
+                                                        objekat_servis_ser_id )
+        REFERENCES objekat ( obj_id,
+                             servis_ser_id );
+
+ALTER TABLE radno_vreme
+    ADD CONSTRAINT radno_vreme_period_fk FOREIGN KEY ( period_per_id )
+        REFERENCES period ( per_id );
+
+ALTER TABLE serviser
+    ADD CONSTRAINT serviser_zaposleni_fk FOREIGN KEY ( mbr )
+        REFERENCES zaposleni ( mbr );
+
+ALTER TABLE servisna_komponenta
+    ADD CONSTRAINT servisna_komponenta_fk FOREIGN KEY ( kom_id )
+        REFERENCES komponenta_uredjaja ( kom_id );
+
+ALTER TABLE usluga
+    ADD CONSTRAINT usluga_servis_fk FOREIGN KEY ( servis_ser_id )
+        REFERENCES servis ( ser_id );
+
+ALTER TABLE usluzitelj
+    ADD CONSTRAINT usluzitelj_zaposleni_fk FOREIGN KEY ( mbr )
+        REFERENCES zaposleni ( mbr );
+
+ALTER TABLE zaposleni
+    ADD CONSTRAINT zaposleni_adresa_fk FOREIGN KEY ( adresa_adr_id )
+        REFERENCES adresa ( adr_id );
+
+ALTER TABLE zaposleni
+    ADD CONSTRAINT zaposleni_objekat_fk FOREIGN KEY ( objekat_obj_id,
+                                                      objekat_servis_ser_id )
+        REFERENCES objekat ( obj_id,
+                             servis_ser_id );
+
+ALTER TABLE zaposleni
+    ADD CONSTRAINT zaposleni_zaposleni_fk FOREIGN KEY ( zaposleni_mbr )
+        REFERENCES zaposleni ( mbr );
